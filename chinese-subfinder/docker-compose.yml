@@ -1,6 +1,11 @@
 version: "3"
 services:
-  chinesesubfinder:
+  app_proxy:
+    environment:
+      APP_HOST: chinesesubfinder_1
+      APP_PORT: 19035
+
+  server:
     image: allanpk716/chinesesubfinder:latest-lite@sha256:a96064ca26b7814dc575d272188e37bc32d1bb2bce2b02a94cdd1097ff52c231
     volumes:
       - ${APP_DATA_DIR}/data/config:/config  # 冒号左边请修改为你想在主机上保存配置、日志等文件的路径
@@ -13,8 +18,6 @@ services:
       - UMASK=022         # 权限掩码
     restart: always
     network_mode: bridge
-    hostname: chinesesubfinder
-    container_name: chinesesubfinder
     ports:
       - 19035:19035
       - 19037:19037  # webui 的视频列表读取图片用，务必设置不要暴露到外网
