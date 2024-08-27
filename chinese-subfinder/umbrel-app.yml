@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: chinese-subfinder
+category: Developer Tools
+name: ChineseSubFinder
+version: "0.55.3"
+tagline: 中文字幕库下载
+description: >-
+  本项目的初衷仅仅是想自动化搞定限定条件下 中文 字幕，在第三方的网站或者接口的下载。
+releaseNotes: >-
+  1. 支持多语言字幕
+developer: allanpk716
+website: https://github.com/ChineseSubFinder/ChineseSubFinder
+dependencies:
+repo: https://github.com/ChineseSubFinder/ChineseSubFinder
+support: https://github.com/ChineseSubFinder/ChineseSubFinder/discussions
+port: 19035
+gallery: [] 
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: toycon
+submission: https://github.com/wacome/umbrel-apps
